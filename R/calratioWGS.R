@@ -44,11 +44,11 @@ calratioWGS <- function(tumor, normal, bin.size = 100000, rm.centromere = TRUE, 
                                                        centromereBins = centromereBins, chrX = chrX, reads.threshold = reads.threshold, prefix = prefix)
     } else {
       WGSRatio <- synthetic_WGS_calratio(tumor, normal[, -c(1:3)], bin.size = bin.size, rm.centromere = rm.centromere,
-                                                       centromereBins = centromereBins, chrX = chrX, reads.threshold = reads.threshold)
+                                                       centromereBins = centromereBins, chrX = chrX, reads.threshold = reads.threshold, prefix = prefix)
     }
   } else {
     WGSRatio <- WGS_calratio(tumor, normal, bin.size = bin.size, rm.centromere = rm.centromere,
-                             centromereBins = centromereBins, chrX = chrX, reads.threshold = reads.threshold)
+                             centromereBins = centromereBins, chrX = chrX, reads.threshold = reads.threshold, prefix = prefix)
 
   }
 
